@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <script src="./javascript/accessibility/access.js"></script>
+
+    <!-- Meta tags pour le référencement -->
+    <meta name="description" content="Explorez la vie nocturne d'Amiens avec les meilleurs bars et boîtes de nuit. Trouvez des informations sur les établissements ouverts, des événements à venir et plus encore.">
+    <meta name="keywords" content="Amiens, Night Life, bars, boîtes de nuit, vie nocturne, établissements, événements, amiens night life, anl">
+    <meta name="author" content="Snaydo">
+
+	<!-- Directives pour les moteurs de recherche -->
+	<meta name="robots" content="index, follow"> <!-- Indique aux moteurs de recherche d'indexer et de suivre les liens de votre site -->
+	<meta name="revisit-after" content="7 days"> <!-- Indique la fréquence à laquelle les moteurs de recherche doivent revisiter votre site -->
+	<meta name="referrer" content="no-referrer"> <!-- Contrôle la politique de référence pour votre site -->
+	
+	<!-- Meta tags pour les médias sociaux et l'affichage mobile -->
+	<meta name="image" content="./img/amiens-home.png"> <!-- Lien vers une image représentative de votre site -->
+	<meta name="theme-color" content="#fe2775"> <!-- Spécifie la couleur principale de votre site pour les appareils mobiles -->
+	
+	 <!-- Configuration pour les appareils iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes"> <!-- Permet l'installation de votre site sur l'écran d'accueil des appareils iOS -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> <!-- Style de la barre d'état pour les appareils iOS -->
+	<link rel="apple-touch-icon" href="./img/logo-insta.png">
+	<meta name="apple-mobile-web-app-title" content="Amiens Night Life"> <!-- Définit un titre personnalisé pour l'application web sur l'écran d'accueil de l'iPhone -->
+	<meta name="apple-touch-fullscreen" content="yes"> <!-- Indique que l'application web doit s'exécuter en mode plein écran sur les appareils iOS -->
+	<meta name="apple-mobile-web-app-orientation" content="portrait">
+	<meta name="apple-mobile-web-app-allow-popups" content="yes">
+	<meta name="apple-mobile-web-app-allow-fullscreen" content="yes">
+
+	<!-- Balises Open Graph pour les médias sociaux -->
+	<meta property="og:title" content="Amiens Night Life | Accueil">
+	<meta property="og:description" content="Explorez la vie nocturne d'Amiens avec les meilleurs bars et boîtes de nuit. Trouvez des informations sur les établissements ouverts, des événements à venir et plus encore.">
+	<meta property="og:image" content="./img/amiens-home.png">
+	<meta property="og:url" content="https://amiensnightlife.fr/">
+	<meta property="og:type" content="website">
+
+
+	<title>Amiens Night Life | Taux Alcoolémie</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
+
+
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/ionicons.min.css">
+	<link rel="stylesheet" href="css/fakeLoader.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	
+	<!-- PreLoader -->
+	<div class="PreLoader">
+		<img src="./img/logo-anl-no-bg.png" alt="Logo">
+		<h2>Amiens NightLife</h2>
+		<div class="loading-bar"></div>
+	</div>
+	<!-- end PreLoader -->
+	
+	<!-- navbar -->
+	<div class="navbar">
+		<div class="left">
+			<a href="" class="link link-back"><i class="icon ion-ios-arrow-back"></i></a>
+		</div>
+		<div class="title">
+			Taux alcoolémie
+		</div>
+		<div class="right">
+			
+		</div>
+	</div>
+	<!-- end navbar -->
+
+<!-- pages wrapper -->
+<div class="pages-wrapper">
+    <!-- separator -->
+    <div class="separator-large"></div>
+    <!-- end separator -->
+    
+    <!-- Calculateur d'Alcoolémie -->
+    <div class="content radius-default bg-lightblue pd-default">
+        <h2 class="text-center">Calculateur d'Alcoolémie</h2>
+        <form id="alcoholCalculator">
+            <div class="form-group">
+                <label for="drinkType">Type de boisson</label>
+                <select class="form-control" id="drinkType">
+                    <option value="beer">Bière</option>
+                    <option value="wine">Vin</option>
+                    <option value="spirits">Spiritueux</option>
+                    <option value="cocktail">Cocktail</option>
+                    <option value="whiskey">Whisky</option>
+                    <option value="vodka">Vodka</option>
+                    <option value="rum">Rhum</option>
+                    <option value="gin">Gin</option>
+                    <option value="tequila">Tequila</option>
+                    <option value="liqueur">Liqueur</option>
+                    <option value="jaeger">Jägermeister</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="numberOfDrinks">Nombre de verres</label>
+                <input type="number" class="form-control" id="numberOfDrinks" min="1" max="10" required>
+            </div>
+            <div class="form-group">
+                <label for="glassSize">Taille du verre (en ml)</label>
+                <input type="range" class="custom-range" id="glassSize" min="50" max="500" step="10" required>
+                <span id="glassSizeValue">250</span> ml
+            </div>
+            <div class="form-group">
+                <label for="alcoholPercentage">Taux d'alcool (%)</label>
+                <input type="range" class="custom-range" id="alcoholPercentage" min="0" max="40" step="0.5" required>
+                <span id="alcoholPercentageValue">5</span> %
+            </div>
+            <div class="form-group">
+                <label for="drinkTime">Heure de consommation</label>
+                <input type="time" class="form-control" id="drinkTime" required>
+            </div>
+            <div class="form-group">
+                <label for="weight">Poids (en kg)</label>
+                <input type="number" class="form-control" id="weight" required>
+            </div>
+            <div class="form-group">
+                <label for="calculationTime">Heure souhaitée pour le calcul</label>
+                <input type="time" class="form-control" id="calculationTime" required>
+            </div>
+            <button type="submit" class="button">Calculer</button>
+        </form>
+        <p id="result"></p>
+        <p id="canDriveMessage"></p>
+    </div>
+    <!-- Fin Calculateur d'Alcoolémie -->
+</div>
+<!-- end pages wrapper -->
+
+
+
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script src="./javascript/ui/preloader.js"></script>
+
+    <script>
+        // Fonction pour mettre à jour le pourcentage d'alcool en fonction du type de boisson
+        function updateAlcoholPercentage() {
+            var drinkType = document.getElementById('drinkType').value;
+            var alcoholPercentageMap = {
+                beer: 5,      // Bière ~ 5%
+                wine: 12,     // Vin ~ 12%
+                spirits: 40,  // Spiritueux ~ 40%
+                cocktail: 15, // Cocktail ~ 15%
+                whiskey: 40,  // Whisky ~ 40%
+                vodka: 40,    // Vodka ~ 40%
+                rum: 40,      // Rhum ~ 40%
+                gin: 40,      // Gin ~ 40%
+                tequila: 40,  // Tequila ~ 40%
+                liqueur: 20   // Liqueur ~ 20%
+            };
+            var selectedAlcoholPercentage = alcoholPercentageMap[drinkType];
+            document.getElementById('alcoholPercentage').value = selectedAlcoholPercentage;
+            document.getElementById('alcoholPercentageValue').innerHTML = selectedAlcoholPercentage;
+        }
+    
+        // Écouteur d'événements pour le formulaire de calcul d'alcoolémie
+        document.getElementById('alcoholCalculator').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            var glassSize = document.getElementById('glassSize').value;
+            var alcoholPercentage = document.getElementById('alcoholPercentage').value;
+            var drinkTime = document.getElementById('drinkTime').value;
+            var weight = document.getElementById('weight').value;
+            var calculationTime = document.getElementById('calculationTime').value;
+
+            // Calcul simplifié du taux d'alcoolémie
+            var pureAlcohol = (glassSize * alcoholPercentage / 100) * 0.789; // 0.789 g/ml est la densité de l'alcool
+            var alcoholRatio = 0.68; // Valeur moyenne pour les hommes et les femmes
+            var result = (pureAlcohol) / (weight * alcoholRatio);
+
+            // Calcul simplifié du taux d'alcoolémie en pourcentage
+            var alcoholPer100mlOfBlood = result.toFixed(2); // Le résultat est déjà en grammes d'alcool par 100 ml de sang
+
+            // Afficher le résultat
+            document.getElementById('result').innerText = alcoholPer100mlOfBlood + ' g d\'alcool/100 ml de sang';
+
+            // Vérifier si l'utilisateur peut conduire en toute sécurité
+            var legalLimit = 0.05; // Exemple de limite légale, ajustez-la en fonction de votre juridiction
+            if (result > legalLimit) {
+                document.getElementById('canDriveMessage').innerText = 'Vous ne devriez pas conduire en état d\'ébriété.';
+                if (result > 3.0) { // Vous pouvez ajuster ce seuil en fonction de ce que vous considérez comme "très élevé"
+                    document.getElementById('canDriveMessage').innerText = 'Même marcher doit être compliqué à ce stade.';
+                }
+            } else {
+                document.getElementById('canDriveMessage').innerText = 'Vous pouvez conduire en toute sécurité.';
+            }
+        });
+    
+        // Écouteur d'événements pour la modification du type de boisson
+        document.getElementById('drinkType').addEventListener('change', updateAlcoholPercentage);
+    
+        // Mettre à jour et afficher les valeurs des range sliders
+        document.getElementById('glassSize').oninput = function() {
+            document.getElementById('glassSizeValue').innerHTML = this.value;
+        }
+        document.getElementById('alcoholPercentage').oninput = function() {
+            document.getElementById('alcoholPercentageValue').innerHTML = this.value;
+        }
+    
+        // Initialisation du pourcentage d'alcool lors du chargement de la page
+        window.onload = updateAlcoholPercentage;
+    </script>
+</body>
+</html>

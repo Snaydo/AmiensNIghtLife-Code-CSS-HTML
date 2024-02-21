@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Amiens Night Life | S'enregistrer</title>
+	<script src="./javascript/accessibility/access.js"></script>
+
+    <!-- Meta tags pour le référencement -->
+    <meta name="description" content="Explorez la vie nocturne d'Amiens avec les meilleurs bars et boîtes de nuit. Trouvez des informations sur les établissements ouverts, des événements à venir et plus encore.">
+    <meta name="keywords" content="Amiens, Night Life, bars, boîtes de nuit, vie nocturne, établissements, événements, amiens night life, anl">
+    <meta name="author" content="Snaydo">
+
+	<!-- Directives pour les moteurs de recherche -->
+	<meta name="robots" content="index, follow"> <!-- Indique aux moteurs de recherche d'indexer et de suivre les liens de votre site -->
+	<meta name="revisit-after" content="7 days"> <!-- Indique la fréquence à laquelle les moteurs de recherche doivent revisiter votre site -->
+	<meta name="referrer" content="no-referrer"> <!-- Contrôle la politique de référence pour votre site -->
+	
+	<!-- Meta tags pour les médias sociaux et l'affichage mobile -->
+	<meta name="image" content="./img/amiens-home.png"> <!-- Lien vers une image représentative de votre site -->
+	<meta name="theme-color" content="#fe2775"> <!-- Spécifie la couleur principale de votre site pour les appareils mobiles -->
+	
+	 <!-- Configuration pour les appareils iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes"> <!-- Permet l'installation de votre site sur l'écran d'accueil des appareils iOS -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> <!-- Style de la barre d'état pour les appareils iOS -->
+	<link rel="apple-touch-icon" href="./img/logo-insta.png">
+	<meta name="apple-mobile-web-app-title" content="Amiens Night Life"> <!-- Définit un titre personnalisé pour l'application web sur l'écran d'accueil de l'iPhone -->
+	<meta name="apple-touch-fullscreen" content="yes"> <!-- Indique que l'application web doit s'exécuter en mode plein écran sur les appareils iOS -->
+	
+	<!-- Balises Open Graph pour les médias sociaux -->
+	<meta property="og:title" content="Amiens Night Life | S'enregistrer">
+	<meta property="og:description" content="Explorez la vie nocturne d'Amiens avec les meilleurs bars et boîtes de nuit. Trouvez des informations sur les établissements ouverts, des événements à venir et plus encore.">
+	<meta property="og:image" content="./img/amiens-home.png">
+	<meta property="og:url" content="https://amiensnightlife.fr/sign-up.html">
+	<meta property="og:type" content="website">
+
+	<link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/ionicons.min.css">
+	<link rel="stylesheet" href="css/fakeLoader.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	
+	<!-- PreLoader -->
+	<div class="PreLoader">
+		<img src="./img/logo-anl-no-bg.png" alt="Logo">
+		<h2>Amiens NightLife</h2>
+		<div class="loading-bar"></div>
+	</div>
+	<!-- end PreLoader -->
+	
+	<!-- navbar -->
+	<div class="navbar">
+		<div class="left">
+			<a href="" class="link link-back"><i class="icon ion-ios-arrow-back"></i></a>
+		</div>
+		<div class="title">
+			S'inscrire
+		</div>
+		<div class="right">
+			
+		</div>
+	</div>
+	<!-- end navbar -->
+
+	<!-- pages wrapper -->
+	<div class="pages-wrapper">
+
+		<!-- separator -->
+		<div class="separator-large"></div>
+		<!-- end separator -->
+		
+		<!-- sign up -->
+		<div class="sign-up">
+			<div class="container">
+				<form class="form-fill" id="registrationForm">
+					<div class="form-wrapper">
+						<div class="input-wrap">
+							<input type="text" placeholder="Nom d'utilisateur" id="username" name="username">
+						</div>
+						<div class="input-wrap">
+							<input type="email" placeholder="Adresse-mail" id="email" name="email">
+						</div>
+						<div class="input-wrap">
+							<input type="password" placeholder="Mot de Passe" id="password" name="password">
+						</div>
+						<div class="input-wrap">
+							<input type="password" placeholder="Confirmez votre Mot de Passe" id="confirm_password" name="confirm_password">
+						</div>
+					</div>
+					<div class="button-default">
+						<button type="submit" class="button">Inscrivez-vous</button>
+					</div>
+				</form>
+
+				<!-- separator -->
+				<div class="separator-medium"></div>
+				<!-- end separator -->
+
+				<div class="link-sign-up text-center text-small">
+					<p>Vous avez déjà un compte?<a href="sign-in.html" class="color-theme ml-2">Se connecter</a></p>
+				</div>
+
+				<!-- separator -->
+				<div class="separator-large"></div>
+				<!-- end separator -->
+
+			</div>
+		</div>
+		<!-- end sign up -->
+
+		<div id="succesModal" class="modal fade succes-modal">
+			<div class="modal-dialog modal-bottom">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="modal-icon-title">
+							<i class="icon ion-ios-checkmark-circle"></i>
+							<h5>Inscription réussi !</h5>
+							<p class="text-small">Vous allez être redirigé vers la page d'acceuil !</p>
+						</div>
+						<div class="button-default">
+							<button class="button" data-dismiss="modal" aria-label="Close">Valider</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="dangerModal" class="modal fade danger-modal">
+			<div class="modal-dialog modal-bottom">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="modal-icon-title">
+							<i class="icon ion-ios-close-circle"></i>
+							<h5>Erreur rencontré</h5>
+							<p class="text-small">So that users easily use and customize this template Equipped with various features</p>
+						</div>
+						<div class="button-default">
+							<button class="button" data-dismiss="modal" aria-label="Close">Compris</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	</div>
+	<!-- end pages wrapper -->
+
+		<!-- toolbar bottom -->
+		<div class="toolbar">
+			<div class="container">
+				<ul class="toolbar-bottom toolbar-wrap">
+					<li class="toolbar-item">
+						<a href="./index.html" class="toolbar-link">
+							<i class="icon ion-ios-home"></i>
+						</a>
+					</li>
+					<li class="toolbar-item">
+						<a href="./repertoire.html" class="toolbar-link">
+							<i class="icon ion-ios-wine"></i>
+						</a>
+					</li>
+					<li class="toolbar-item">
+						<a href="./chat.html" class="toolbar-link">
+							<i class="icon ion-ios-chatboxes"></i>
+						</a>
+					</li>
+					<li class="toolbar-item">
+						<a href="./sign-in.html" class="toolbar-link">
+							<i class="icon ion-ios-log-in"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- end toolbar bottom -->
+
+	<script src="./javascript/Compte/register.js"></script>
+
+	<script src="./javascript/ui/modal.js"></script>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="./javascript/ui/preloader.js"></script>
+	<script src="js/jquery.big-slide.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>

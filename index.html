@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Amiens Night Life | Accueil</title>
+
+    <!-- Meta tags pour le référencement -->
+    <meta name="description" content="Explorez la vie nocturne d'Amiens avec les meilleurs bars et boîtes de nuit. Trouvez des informations sur les établissements ouverts, des événements à venir et plus encore.">
+    <meta name="keywords" content="Amiens, Night Life, bars, boîtes de nuit, vie nocturne, établissements, événements, amiens night life, anl">
+    <meta name="author" content="Snaydo">
+
+	<!-- Directives pour les moteurs de recherche -->
+	<meta name="robots" content="index, follow"> <!-- Indique aux moteurs de recherche d'indexer et de suivre les liens de votre site -->
+	<meta name="revisit-after" content="7 days"> <!-- Indique la fréquence à laquelle les moteurs de recherche doivent revisiter votre site -->
+	<meta name="referrer" content="no-referrer"> <!-- Contrôle la politique de référence pour votre site -->
+	
+	<!-- Meta tags pour les médias sociaux et l'affichage mobile -->
+	<meta name="image" content="./img/amiens-home.png"> <!-- Lien vers une image représentative de votre site -->
+	<meta name="theme-color" content="#fe2775"> <!-- Spécifie la couleur principale de votre site pour les appareils mobiles -->
+	
+	 <!-- Configuration pour les appareils iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes"> <!-- Permet l'installation de votre site sur l'écran d'accueil des appareils iOS -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> <!-- Style de la barre d'état pour les appareils iOS -->
+	<link rel="apple-touch-icon" href="./img/logo-insta.png">
+	<meta name="apple-mobile-web-app-title" content="Amiens Night Life"> <!-- Définit un titre personnalisé pour l'application web sur l'écran d'accueil de l'iPhone -->
+	<meta name="apple-touch-fullscreen" content="yes"> <!-- Indique que l'application web doit s'exécuter en mode plein écran sur les appareils iOS -->
+	<meta name="apple-mobile-web-app-orientation" content="portrait">
+	<meta name="apple-mobile-web-app-allow-popups" content="yes">
+	<meta name="apple-mobile-web-app-allow-fullscreen" content="yes">
+	
+
+	<!-- Balises Open Graph pour les médias sociaux -->
+	<meta property="og:title" content="Amiens Night Life | Accueil">
+	<meta property="og:description" content="Explorez la vie nocturne d'Amiens avec les meilleurs bars et boîtes de nuit. Trouvez des informations sur les établissements ouverts, des événements à venir et plus encore.">
+	<meta property="og:image" content="./img/amiens-home.png">
+	<meta property="og:url" content="https://amiensnightlife.fr/">
+	<meta property="og:type" content="website">
+
+	<link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/ionicons.min.css">
+	<link rel="stylesheet" href="css/fakeLoader.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	
+	<!-- PreLoader -->
+	<div class="PreLoader">
+		<img src="./img/logo-anl-no-bg.png" alt="Logo">
+		<h2>Amiens NightLife</h2>
+		<div class="loading-bar"></div>
+	</div>
+	<!-- end PreLoader -->
+
+	
+	<!-- navbar -->
+	<div class="navbar navbar-home">
+		<div class="left">
+			<a href="#menu" class="link menu-link"><i class="icon ion-ios-menu"></i></a>
+		</div>
+		<div class="right">
+			<a href="mon-profile.html" class="link" id="profile-link"><img src="./pdp/person-icon.png" alt="" id="profile-image" class="profile-image"></a>
+		</div>
+	</div>
+	<!-- end navbar -->
+
+	<!-- sidebar -->
+	<div class="side-overlay"></div>
+	<div id="menu" class="panel sidebar" role="navigation">
+
+		<!-- separator -->
+		<div class="separator-large"></div>
+		<!-- end separator -->
+
+		<div class="list-view list-separate-two list-colored">
+			<ul>
+				<li>
+					<a href="./index.html" class="list-item">
+						<div class="list-media">
+							<i class="icon ion-ios-home bg-blue"></i>
+						</div>
+						<div class="list-label">
+							<div class="list-title">Accueil</div>
+							<div class="list-after"><i class="icon ion-ios-arrow-forward"></i></div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./repertoire.html" class="list-item">
+						<div class="list-media">
+							<i class="icon ion-ios-wine bg-red"></i>
+						</div>
+						<div class="list-label">
+							<div class="list-title">Répertoire Etab</div>
+							<div class="list-after"><i class="icon ion-ios-arrow-forward"></i></div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./tarifs.html" class="list-item">
+						<div class="list-media">
+							<i class="icon ion-ios-cash bg-green"></i>
+						</div>
+						<div class="list-label">
+							<div class="list-title">Tarifs des Etab</div>
+							<div class="list-after"><i class="icon ion-ios-arrow-forward"></i></div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./chat.html" class="list-item">
+						<div class="list-media">
+							<i class="icon ion-ios-chatboxes bg-blue"></i>
+						</div>
+						<div class="list-label">
+							<div class="list-title">Chat</div>
+							<div class="list-after"><i class="icon ion-ios-arrow-forward"></i></div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./pricing-table.html" class="list-item">
+						<div class="list-media">
+							<i class="icon ion-ios-cash bg-theme"></i>
+						</div>
+						<div class="list-label">
+							<div class="list-title">Abonnements</div>
+							<div class="list-after"><i class="icon ion-ios-arrow-forward"></i></div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./taux-alcoolemie.html" class="list-item">
+						<div class="list-media">
+							<i class="icon ion-ios-wine bg-blue"></i>
+						</div>
+						<div class="list-label">
+							<div class="list-title">Taux alcoolémie</div>
+							<div class="list-after"><i class="icon ion-ios-arrow-forward"></i></div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./snake.html" class="list-item">
+						<div class="list-media">
+							<i class="ion-md-git-compare bg-green"></i>
+						</div>
+						<div class="list-label">
+							<div class="list-title">Snake</div>
+							<div class="list-after"><i class="icon ion-ios-arrow-forward"></i></div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./sign-in.html" class="list-item" id="login">
+						<div class="list-media">
+							<i class="icon ion-ios-log-in bg-purple"></i>
+						</div>
+						<div class="list-label">
+							<div class="list-title">S'enregistrer</div>
+							<div class="list-after"><i class="icon ion-ios-arrow-forward"></i></div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./mon-profile.html" class="list-item" id="profil">
+						<div class="list-media">
+							<i class="icon ion-ios-person bg-purple"></i>
+						</div>
+						<div class="list-label">
+							<div class="list-title">Mon Profil</div>
+							<div class="list-after"><i class="icon ion-ios-arrow-forward"></i></div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./parametre.html" class="list-item" id="settings">
+						<div class="list-media">
+							<i class="icon ion-ios-settings bg-orange"></i>
+						</div>
+						<div class="list-label">
+							<div class="list-title">Paramètres</div>
+							<div class="list-after"><i class="icon ion-ios-arrow-forward"></i></div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- separator -->
+		<div class="separator-large"></div>
+		<!-- end separator -->
+
+		<div class="list-view list-separate-two list-colored">
+			<ul>
+				<li>
+					<a href="vie-prive.html" class="list-item">
+						<div class="list-media">
+							<i class="icon ion-ios-lock bg-blue"></i>
+						</div>
+						<div class="list-label">
+							<div class="list-title">Vie Privée</div>
+							<div class="list-after"><i class="icon ion-ios-arrow-forward"></i></div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="list-item" id="logout">
+						<div class="list-media">
+							<i class="icon ion-ios-power bg-red"></i>
+						</div>
+						<div class="list-label">
+							<div class="list-title">Déconnexion</div>
+							<div class="list-after"><i class="icon ion-ios-arrow-forward"></i></div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- separator -->
+		<div class="separator-large"></div>
+		<!-- end separator -->
+
+	</div>
+	<!-- end sidebar -->
+
+	<!-- page wrapper -->
+	<div class="page-wrapper">
+
+		<div class="section-title title-large">
+			<span class="overline-title">Hey, <span id="username"></span> <span id="emoji-coucou" class="wave">👋</span></span>
+			<h3>La vie nocturne t'attend avec impatience !</h3>
+		</div>
+
+		<!-- intro app -->
+		<div class="intro-app">
+			<div class="container">
+				<div class="intro-content">
+					<div class="mask"></div>
+					<img src="./img/amiens-home-dalle.png" alt="image-demo">
+					<div class="caption">
+						<h4 class="text-white mb-1">Bienvenue <span id="username"></span></h4>
+						<p class="text-white">Amiens Night Life</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end intro app -->
+
+		<!-- feature slide -->
+		<div class="feature-slide">
+			<div class="swiper-container swiper-style">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="content shadow-sm">
+							<div class="info-statistic bg-blue animate-statistic">5+</div>
+							<div class="icon"><i class="icon ion-ios-star color-blue"></i></div>
+							<div class="text slide-news" id="nouveautes">
+								<h5>Nouveautés</h5>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="content shadow-sm">
+							<div class="info-statistic bg-red animate-statistic">3+</div>
+							<div class="icon"><i class="icon ion-ios-apps color-red"></i></div>
+							<div class="text slide-app" id="apps">
+								<h5>Apps</h5>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="content shadow-sm">
+							<div class="info-statistic bg-theme animate-statistic">15+</div>
+							<div class="icon"><i class="icon ion-ios-wine color-theme"></i></div>
+							<div class="text slide-bars" id="bars">
+								<h5>Bars</h5>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="content shadow-sm">
+							<div class="info-statistic bg-yellow animate-statistic">7+</div>
+							<div class="icon"><i class="icon ion-ios-lock color-yellow"></i></div>
+							<div class="text slide-secu" id="securite">
+								<h5>Sécurité</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- feature list -->
+		<div class="feature-list">
+			<div class="swiper-container swiper-style-full">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="content bg-lightblue">
+							<div class="wrap-icon">
+								<i class="icon ion-ios-brush bg-blue"></i>
+							</div>
+							<div class="text">
+								<h5>Nouveau Design</h5>
+								<p>ANL a choisi un design épuré pour l'interface mobile, offrant une expérience visuelle moderne et conviviale.</p>
+							</div>
+						</div>
+					</div>
+			
+					<!-- Deuxième diapositive -->
+					<div class="swiper-slide">
+						<div class="content bg-lightgreen">
+							<div class="wrap-icon">
+								<i class="icon ion-ios-checkbox bg-green"></i>
+							</div>
+							<div class="text">
+								<h5>Plusieurs Nouveautés</h5>
+								<p>Découvrez de nombreuses nouveautés sur notre site, offrant une expérience enrichissante et des fonctionnalités améliorées.</p>
+							</div>
+						</div>
+					</div>
+			
+					<!-- Troisième diapositive -->
+					<div class="swiper-slide">
+						<div class="content bg-lightred">
+							<div class="wrap-icon">
+								<i class="icon ion-ios-keypad bg-red"></i>
+							</div>
+							<div class="text">
+								<h5>Amusez-vous !</h5>
+								<p>Profitez d'un divertissement exceptionnel avec notre site. Découvrez des fonctionnalités uniques qui rendront votre expérience encore plus agréable.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<!-- feature list -->
+
+		<!-- newsletter -->
+		<div class="newsletter bg-lightblue">
+
+			<!-- separator -->
+			<div class="separator-medium"></div>
+			<!-- end separator -->
+
+			<div class="section-title text-center title-large">
+				<h3>S'abonner à la newsletter <span id="emoji-title" class="emoji-title">💌</span></h3>
+				<p class="text-small mt-1">Entrez votre adresse e-mail pour recevoir nos newsletters</p>
+			</div>
+			<div class="container">
+
+				<form class="form-fill form-icon-inset" id="newsletterForm">
+					<div class="form-wrapper">
+						<div class="input-wrap bg-white">
+							<input type="email" name="email" placeholder="Adresse-mail" class="bg-white">
+							<a href="#">
+								<div class="button-icon">
+									<i class="icon ion-ios-checkmark"></i>
+								</div>
+							</a>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<!-- separator -->
+			<div class="separator-large"></div>
+			<!-- end separator -->
+
+		</div>
+		<!-- end newsletter -->
+
+		<!-- separator -->
+		<div class="separator-small"></div>
+		<!-- end separator -->
+
+		<!-- footer -->
+		<div class="footer">
+			<div class="container">
+				<div class="content-box shadow-sm">
+					<h4 class="mb-1">Amiens Night Life <span id="emoji-title" class="emoji-title">🌙</span></h4>
+					<span>Suivez les actualités</span>
+
+					<!-- separator -->
+					<div class="separator-small"></div>
+					<!-- end separator -->
+
+					<div class="social-media-icon">
+						<ul>
+							<li><a href="https://www.instagram.com/amiensnightlife/" target="_blank"><i class="icon ion-logo-instagram bg-instagram"></i></a></li>
+							<li><a href="#" target="_blank"><i class="icon ion-logo-twitter bg-twitter"></i></a></li>
+						</ul>
+					</div>
+
+					<!-- separator -->
+					<div class="separator-small"></div>
+					<!-- end separator -->
+
+					<p class="made-by text-small">Propulsed by <img class="logo-devmystia" src="./img/logo-devmystia.png" alt=""> DevMystia</p>
+				</div>
+			</div>
+		</div>
+		<!-- end footer -->
+
+		<!-- separator -->
+		<div class="separator-large"></div>
+		<!-- end separator -->
+
+		<div id="succesModal" class="modal fade succes-modal">
+			<div class="modal-dialog modal-bottom">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="modal-icon-title">
+							<i class="icon ion-ios-checkmark-circle"></i>
+							<h5>Connection réussi !</h5>
+							<p class="text-small">Vous allez être redirigé vers la page d'acceuil !</p>
+						</div>
+						<div class="button-default">
+							<button class="button" data-dismiss="modal" aria-label="Close">Confirmez</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="dangerModal" class="modal fade danger-modal">
+			<div class="modal-dialog modal-bottom">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="modal-icon-title">
+							<i class="icon ion-ios-close-circle"></i>
+							<h5>Erreur rencontré</h5>
+							<p class="text-small">So that users easily use and customize this template Equipped with various features</p>
+						</div>
+						<div class="button-default">
+							<button class="button" data-dismiss="modal" aria-label="Close">Compris</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- end page wrapper -->
+
+	<!-- toolbar bottom -->
+	<div class="toolbar">
+		<div class="container">
+			<ul class="toolbar-bottom toolbar-wrap">
+				<li class="toolbar-item">
+					<a href="./index.html" class="toolbar-link toolbar-link-active">
+						<i class="icon ion-ios-home"></i>
+					</a>
+				</li>
+				<li class="toolbar-item">
+					<a href="./repertoire.html" class="toolbar-link">
+						<i class="icon ion-ios-wine"></i>
+					</a>
+				</li>
+				<li class="toolbar-item">
+					<a href="./chat.html" class="toolbar-link">
+						<i class="icon ion-ios-chatboxes"></i>
+					</a>
+				</li>
+				<li class="toolbar-item">
+					<a href="./sign-in.html" class="toolbar-link">
+						<i class="icon ion-ios-log-in" id="login-toolbar"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- end toolbar bottom -->
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+
+	<script src="./javascript/ui/preloader.js"></script>
+
+	<script src="./javascript/Chat/users.bundle.js"></script>
+
+	<script src="./javascript/ui/modal.js"></script>
+
+	<script src="./javascript/ui/affichepdp.js"></script>
+
+	<script src="./javascript/ui/navbar.js"></script>
+
+	<script src="./javascript/ui/toolbar.js"></script>
+
+	<script src="./javascript/Compte/logout-button.js"></script>
+
+	<script src="./javascript/ui/accueil-username.js"></script>
+
+	<script src="./javascript/newsletter/sign-up.js"></script>
+
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/jquery.big-slide.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>
